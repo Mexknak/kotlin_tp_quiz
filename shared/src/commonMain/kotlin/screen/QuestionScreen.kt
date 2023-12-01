@@ -18,6 +18,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import dataClass.Question
 import dataClass.Quiz
 
 @Composable
@@ -63,7 +64,7 @@ fun QuestionScreen(
 
             Button(
                 onClick = {
-                    if (selectedAnswer == quiz.questions[questionIndex].correctId) {
+                    if (selectedAnswer == quiz.questions[questionIndex].correctAnswerId) {
                         score += 1
                     }
                     questionIndex += 1
