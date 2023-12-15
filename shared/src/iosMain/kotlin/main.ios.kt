@@ -2,4 +2,5 @@ import androidx.compose.ui.window.ComposeUIViewController
 
 actual fun getPlatformName(): String = "iOS"
 
-fun MainViewController() = ComposeUIViewController { App() }
+import moe.tlaster.precompose.PreComposeApplication
+fun MainViewController(): UIViewController = PreComposeApplication() { App() }

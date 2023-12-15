@@ -23,6 +23,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
+                api("moe.tlaster:precompose:1.5.7")
                 implementation(compose.runtime)
                 implementation(compose.foundation)
                 implementation(compose.material)
